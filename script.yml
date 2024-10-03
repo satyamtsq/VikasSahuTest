@@ -1,0 +1,23 @@
+name: GitHub Actions Pipelinee
+on:
+ push:
+  branches:
+    - main
+jobs:
+ invoke_api:
+  runs-on: windows-latest
+  steps:
+    - name: Call REST API
+      run: |
+       $BatchscheduleID = '${{ vars.BATCHSCHEDULEID }}'
+        $params = @{
+          Uri = 'http://3.6.189.154:8080/test-automation-via-cicd'
+          Method = 'POST'
+          Body = @{
+            Usernameofbreez = 'qa@chartrequest.com'
+            Passwordofbreez = 'tsq@123'
+            BatchscheduleID = $BatchscheduleID
+            IpAddress = 'http://3.6.189.154:8080/'
+          }
+        }
+        Invoke-RestMethod @params\
