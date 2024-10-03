@@ -20,4 +20,4 @@ jobs:
             IpAddress = 'http://3.6.189.154:8080/'
           }
         }
-        Invoke-RestMethod @params\
+        Invoke-RestMethod @params
