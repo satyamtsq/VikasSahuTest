@@ -14,8 +14,8 @@ jobs:
           Uri = 'http://3.6.189.154:8080/test-automation-via-cicd'
           Method = 'POST'
           Body = @{
-            Usernameofbreez = 'vikas.sahu@tesquirel.com'
-            Passwordofbreez = 'Tsq@12345'
+            Usernameofbreez = 'sarrofsa01@gmail.com'
+            Passwordofbreez = 'Sonu@1234'
             BatchscheduleID = $BatchscheduleID
           }
         }
