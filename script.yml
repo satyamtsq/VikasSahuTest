@@ -16,8 +16,7 @@ jobs:
           Body = @{
             Usernameofbreez = 'vikas.sahu@tesquirel.com'
             Passwordofbreez = 'Tsq@12345'
-            BatchscheduleID = $BatchscheduleID
-            IpAddress = 'http://3.6.189.154:8080/'
+            BatchscheduleID = $BatchscheduleID'
           }
         }
         Invoke-RestMethod @params\
